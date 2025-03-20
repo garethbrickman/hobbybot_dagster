@@ -1,0 +1,28 @@
+[project]
+name = "hobbybot_dagster"
+requires-python = ">=3.9,<3.13"
+version = "0.1.0"
+dependencies = [
+    "dagster-components",
+]
+
+[project.entry-points]
+"dagster_dg.library" = { hobbybot_dagster = "hobbybot_dagster.lib"}
+
+[dependency-groups]
+dev = [
+    "dagster-webserver",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.dg]
+directory_type = "project"
+
+[tool.dg.project]
+root_module = "hobbybot_dagster"
+
+[tool.setuptools.packages.find]
+exclude=["hobbybot_dagster_tests"]

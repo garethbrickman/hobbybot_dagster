@@ -1,0 +1,2 @@
+[dagster_dg.library]
+hobbybot_dagster = hobbybot_dagster.lib

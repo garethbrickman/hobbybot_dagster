@@ -1,0 +1,4 @@
+locations:
+  - location_name: hobbybot-dagster
+    code_source:
+      module_name: hobbybot_dagster.definitions
